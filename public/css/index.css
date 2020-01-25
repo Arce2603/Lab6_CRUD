@@ -1,0 +1,32 @@
+label, textarea, .click{
+    display: block;
+    padding: 3px 0;
+}
+
+form{
+    padding:10px;
+}
+ul{
+    list-style:none;
+}
+
+h3{
+    margin:15px 3px 0 auto;
+}
+
+h5{
+    margin: 0 3px;
+}
+
+.autorFecha{
+    font-style:italic;
+}
+
+span{
+    margin:50px;
+}
+
+.error{
+    display:none;
+    color:red;
+}

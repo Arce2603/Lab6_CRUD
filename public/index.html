@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>MyBlog</title>
+    <link href="./css/index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1>Blog</h1>
+    <ul id="comentarios"></ul>
+    <form id="nuevoComent">
+        <fieldset>
+            <legend>Comentarios nuevos</legend>
+            <label class="error" id="nuevoComentE"></label>
+            <label>Titulo: <input type="text" id="nTitulo" placeholder="Titulo" /></label>
+            <label>Autor: <input type="text" id="nAutor" placeholder="Autor" /></label>
+            Comentario:
+            <textarea cols="50" rows="4" id="nComentario"></textarea>
+            <input type="submit" value="Publicar" id="post" class="click">
+        </fieldset>
+    </form>
+    <form id="actualiza">
+        <fieldset>
+            <legend>Actualizar comentarios</legend>
+            <label class="error" id="actualizaE"></label>
+            <label>Titulo: <input type="text" id="aTitulo" placeholder="Titulo" /></label>
+            <label>Id: <input type="text" id="aId" placeholder="Id" /></label>
+            <label>Autor: <input type="text" id="aAutor" placeholder="Autor" /></label>
+            Comentario:
+            <textarea cols="50" rows="4" id="aComentario"></textarea>
+            <input type="submit" value="Actualizar" id="put" class="click">
+        </fieldset>
+    </form>
+    <form id="borrar">
+        <fieldset>
+            <legend>Borrar comentarios</legend>
+            <label class="error" id="borrarE"></label>
+            <label>Id de comentario a eliminar: <input type="text" id="bId" placeholder="Id" /></label>
+            <input type="submit" value="Borrar" id="del" class="click">
+        </fieldset>
+    </form>
+    <div class="display">
+        <form id="getAutor">
+            <fieldset>
+                <label class="error" id="getAutorE"></label>
+                <legend>Filtrar por autor</legend>
+                <label>Filtrar comentarios de: <input type="text" id="porAutor" placeholder="autor" /></label>
+                <input type="submit" value="Filtrar" id="filter" class="click">
+            </fieldset>
+        </form>
+        <ul id="comentAutor"></ul>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
